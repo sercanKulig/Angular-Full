@@ -11,6 +11,7 @@ import {CartSummaryComponent} from './cart/cart-summary/cart-summary.component';
 import {LoggedComponent} from './account/logged/logged.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 import {HttpModule} from '@angular/http';
+import {HeaderComponent} from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {HttpModule} from '@angular/http';
     ShippingDetailComponent,
     CartSummaryComponent,
     LoggedComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
