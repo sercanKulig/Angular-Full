@@ -12,6 +12,7 @@ import {LoggedComponent} from './account/logged/logged.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 import {HttpModule} from '@angular/http';
 import {HeaderComponent} from './header/header.component';
+import {NotificationsService, SimpleNotificationsModule} from 'angular2-notifications/dist';
 
 @NgModule({
   declarations: [
@@ -28,10 +29,12 @@ import {HeaderComponent} from './header/header.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    SimpleNotificationsModule.forRoot()
   ],
   providers: [
-    {provide: 'apiUrl', useValue: 'http://northwindapi.azurewebsites.net/api'}
+    {provide: 'apiUrl', useValue: 'http://northwindapi.azurewebsites.net/api'},
+    NotificationsService
   ],
   bootstrap: [AppComponent]
 })
