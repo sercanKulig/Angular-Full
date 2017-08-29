@@ -28,7 +28,9 @@ import {HttpModule} from '@angular/http';
     BrowserModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    {provide: 'apiUrl', useValue: 'http://northwindapi.azurewebsites.net/api'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
