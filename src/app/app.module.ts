@@ -10,6 +10,7 @@ import {ShippingDetailComponent} from './shipping-detail/shipping-detail.compone
 import {CartSummaryComponent} from './cart/cart-summary/cart-summary.component';
 import {LoggedComponent} from './account/logged/logged.component';
 import {NotFoundComponent} from './not-found/not-found.component';
+import {HttpModule} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {NotFoundComponent} from './not-found/not-found.component';
     NotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
